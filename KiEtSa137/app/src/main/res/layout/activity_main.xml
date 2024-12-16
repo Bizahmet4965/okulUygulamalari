@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/editTextNumber_AY"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="127dp"
+        android:autofillHints=""
+        android:hint="1 den 12 ye kadar girin"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/onayla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="37.9dp"
+        app:layout_editor_absoluteY="15dp"
+        tools:ignore="HardcodedText,MissingConstraints,TextFields" />
+
+    <Button
+        android:id="@+id/onayla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="112dp"
+        android:contentDescription="@string/app_name"
+        android:text="@string/bak"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_AY"
+        app:layout_editor_absoluteX="150dp"
+        app:layout_editor_absoluteY="190dp"
+        android:onClick="onayla"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="362dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/onayla"
+        app:layout_constraintTop_toBottomOf="@+id/onayla"
+        app:layout_editor_absoluteX="199dp"
+        app:layout_editor_absoluteY="350dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

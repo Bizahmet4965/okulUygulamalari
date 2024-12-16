@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNumber_Not1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"
+        android:hint="Ders Notu 1"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber_Not2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber_Not2"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber_Not2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+    <EditText
+        android:id="@+id/editTextNumber_Not2"
+        android:layout_width="220dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:hint="Ders Notu 2"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber_Not3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_Not1"
+        tools:ignore="AutoFill,HardcodedText,MissingConstraints,TextFields"
+        tools:layout_editor_absoluteX="15" />
+
+    <EditText
+        android:id="@id/editTextNumber_Not3"
+        android:layout_width="220dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="548dp"
+        android:hint="Ders Notu 3"
+        android:inputType="number"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_Not2"
+        tools:ignore="AutoFill,HardcodedText,MissingConstraints,TextFields"
+        tools:layout_editor_absoluteX="15" />
+
+    <Button
+        android:id="@+id/button_Onayla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_Not1"
+        tools:ignore="MissingConstraints"
+        android:text="@string/onayla"
+        android:onClick="onayla"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

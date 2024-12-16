@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/sw_Ks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:minHeight="48dp"
+        android:text="Konum Servisleri"
+        app:layout_constraintBottom_toTopOf="@+id/sw_KbA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/sw_KbA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:minHeight="48dp"
+        android:text="Konum Bilgilerini Al"
+        app:layout_constraintBottom_toTopOf="@+id/sw_KsA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sw_KsA"
+        app:layout_constraintTop_toBottomOf="@+id/sw_Ks"
+        tools:ignore="MissingConstraints,HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/sw_KsA"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="113dp"
+        android:minHeight="48dp"
+        android:text="Konum Servislerini Al"
+        app:layout_constraintBottom_toTopOf="@+id/btnGndr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_KbA"
+        tools:ignore="MissingConstraints,HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/btnGndr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="398dp"
+        android:minHeight="48dp"
+        android:text="Gönder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_KsA"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:onClick="onayla"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
